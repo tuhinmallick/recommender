@@ -59,5 +59,4 @@ def generate_emails(inputs, OPENAI_API_KEY):
     # print("-"*30)
 
     response = llm(formatted_input)
-    parsed_output = parser.parse(response)
-    return parsed_output
+    return parser.parse(response)
