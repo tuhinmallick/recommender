@@ -22,8 +22,7 @@ def index():
 def generate(inputs: Inputs):
     email_inputs = inputs.email_inputs
     OPENAI_API_KEY = inputs.api_key
-    answer = generate_emails(email_inputs, OPENAI_API_KEY)
-    return answer
+    return generate_emails(email_inputs, OPENAI_API_KEY)
 
 
 if __name__ == "__main__":
